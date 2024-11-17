@@ -1,6 +1,9 @@
 *{
     margin: 0px;
 }
+body{
+    background-color: rgb(44, 18, 69);
+}
 .navbar{
     display: flex;
     align-items: center;
@@ -22,17 +25,19 @@
     list-style: none;
     font-size: 19px;
     cursor: pointer;
+    position: relative;
+    left: 300px;
 }
 .pages ul li:hover {
     color: black; /* Change text color to white */
 }
 
-.body{
+/* .body{
     background-color: rgb(44, 18, 69);
     color: aliceblue;
     height: 100vh;
     width: 100%;
-}
+} */
 
 .animations{
     color: aliceblue;
@@ -43,4 +48,36 @@
     left: 265px;
     top: 273px;
     font-size: 33px;
+}
+#home{
+    color: brown;
+}
+#img img {
+    position: relative; 
+    left: 1000px;
+    top: 200px;
+    height: 350px;
+    width: 500px;
+    opacity: 0.5;
+}
+
+.toggle_box{
+    border-radius: 1rem;
+    height: 20px;
+    width: 50px;
+    background-color: antiquewhite;
+    position: relative;
+    cursor: pointer;
+    left: 150px;
+}
+#checkbox{
+    display: none;
+}
+.circle{
+    border-radius: 1rem;
+    height: 20px;
+    width: 25px;
+    background-color: black;
+    position: relative;
+    left: 0px;
 }
