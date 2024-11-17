@@ -4,8 +4,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
+    <nav class="navbar">
+        <div class="heading">Faisal's Portfolio</div>
+        <div class="pages">
+            <ul>
+                <li id="about">About</li>
+                <li id="home">Home</li>
+                <li id="conatct">Contact us</li>
+            </ul>
+        </div>
+    </nav>
+    <div class="body">
+        <div class="animations">
+            <span>Hi, My name is Faisal and I am a passionate</span>
+            <span id="element"></span>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Web Developer', 'Web Designer'],
+            typeSpeed: 50,
+          });
+    </script>
 </body>
 </html>

@@ -1,0 +1,46 @@
+*{
+    margin: 0px;
+}
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: blueviolet;
+    color: aliceblue;
+    position: fixed;
+    width: 100%;
+    height: 5vh;
+}
+.heading{
+    font-size: 22px;
+    font-weight: 900;
+}
+.pages >ul{
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    list-style: none;
+    font-size: 19px;
+    cursor: pointer;
+}
+.pages ul li:hover {
+    color: black; /* Change text color to white */
+}
+
+.body{
+    background-color: rgb(44, 18, 69);
+    color: aliceblue;
+    height: 100vh;
+    width: 100%;
+}
+
+.animations{
+    color: aliceblue;
+    height: 20px;
+    width: 422px;
+    text-align: center;
+    position: relative;
+    left: 265px;
+    top: 273px;
+    font-size: 33px;
+}
