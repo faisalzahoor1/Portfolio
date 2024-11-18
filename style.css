@@ -13,6 +13,7 @@ body{
     position: fixed;
     width: 100%;
     height: 5vh;
+    z-index: 10;
 }
 .heading{
     font-size: 22px;
@@ -58,7 +59,7 @@ body{
     top: 200px;
     height: 350px;
     width: 500px;
-    opacity: 0.5;
+    opacity: 0.3;
 }
 
 .toggle_box{
@@ -81,3 +82,80 @@ body{
     position: relative;
     left: 0px;
 }
+.separation{
+    border: 1px solid rgb(83, 83, 182);
+    position: relative;
+    top: 300px;
+    width: 90%;
+    left: 80px;
+}
+.experience{
+    position: relative;
+    top: 400px;
+    width: 90%;
+    height: 200px;
+    left: 80px;
+    color: aliceblue;
+}
+
+
+.wheel-container {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    margin: 0 auto;
+}
+
+.wheel {
+    width: 200px;
+    height: 200px;
+    border: 1px solid #a59e9e;
+    border-radius: 50%;
+    position: relative;
+    margin: 0 auto;
+    animation: rotate 20s linear infinite;
+}
+
+.node {
+    width: 20px;
+    height: 20px;
+    background-color: blueviolet;
+    border-radius: 50%;
+    position: absolute;
+    cursor: pointer;
+    transition: transform 0.1s linear;
+} 
+
+/* Position nodes on the wheel */
+#node1 {
+    top: 0px;
+    left: 40px;
+}
+
+#node2 {
+    bottom: 43px;
+    left: 0px;
+}
+
+#node3 {
+    right: 0px;
+    top: 50px;
+}
+#node4 {
+    right: 45px;
+    top: 175px;
+}
+
+.node:hover {
+    transform: scale(15);
+    background-color: orange;
+}
+/* Rotating animation for the wheel */
+ @keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+} 
