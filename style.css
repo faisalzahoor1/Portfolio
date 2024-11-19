@@ -89,6 +89,13 @@ body{
     width: 90%;
     left: 80px;
 }
+.separation1{
+    border: 1px solid rgb(83, 83, 182);
+    position: relative;
+    top: 900px;
+    width: 90%;
+    left: 80px;
+}
 .experience{
     position: relative;
     top: 400px;
@@ -96,6 +103,11 @@ body{
     height: 200px;
     left: 80px;
     color: aliceblue;
+}
+h2{
+    position: relative;
+    top: 250px;
+    left: 750px;
 }
 
 
@@ -107,51 +119,54 @@ body{
 }
 
 .wheel {
-    width: 200px;
-    height: 200px;
+    width: 500px;
+    height: 500px;
     border: 1px solid #a59e9e;
-    border-radius: 50%;
+    border-radius: 100%;
     position: relative;
     margin: 0 auto;
-    animation: rotate 20s linear infinite;
+    animation: rotate 18s linear infinite;
 }
 
 .node {
-    width: 20px;
-    height: 20px;
+    width: 80px;
+    height: 80px;
+    cursor: pointer;
     background-color: blueviolet;
     border-radius: 50%;
     position: absolute;
-    cursor: pointer;
-    transition: transform 0.1s linear;
+    transition: 0.5s linear;
+    animation: rotateNode1 18s linear infinite;
 } 
+
+.node:hover{
+    /* transform: scale(5); */
+    width: 300px;
+    height: 300px;
+    background-color: orange;
+}
 
 /* Position nodes on the wheel */
 #node1 {
-    top: 0px;
+    top: 20px;
     left: 40px;
 }
 
 #node2 {
-    bottom: 43px;
-    left: 0px;
+    bottom: 70px;
+    left: 10px;
 }
 
 #node3 {
-    right: 0px;
+    right: 15px;
     top: 50px;
 }
 #node4 {
-    right: 45px;
-    top: 175px;
+    right: 0px;
+    top: 350px;
 }
 
-.node:hover {
-    transform: scale(15);
-    background-color: orange;
-}
-/* Rotating animation for the wheel */
- @keyframes rotate {
+@keyframes rotate {
     from {
         transform: rotate(0deg);
     }
@@ -159,3 +174,82 @@ body{
         transform: rotate(360deg);
     }
 } 
+@keyframes rotateNode1 {
+    from {
+        transform: rotate(360deg);
+    }
+    to {
+        transform: rotate(0deg); /* Opposite direction to cancel rotation */
+    }
+}
+@keyframes rotateNode2 {
+    from {
+        transform: rotate(360deg);
+    }
+    to {
+        transform: rotate(0deg); /* Opposite direction to cancel rotation */
+    }
+}
+@keyframes rotateNode3 {
+    from {
+        transform: rotate(360deg);
+    }
+    to {
+        transform: rotate(0deg); /* Opposite direction to cancel rotation */
+    }
+}
+@keyframes rotateNode4 {
+    from {
+        transform: rotate(360deg);
+    }
+    to {
+        transform: rotate(0deg); /* Opposite direction to cancel rotation */
+    }
+} 
+
+#node1 img{
+    display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 25px;
+  width: 50%;
+}
+#node2 img{
+    display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 15px;
+  width: 50%;
+}
+#node3 img{
+    display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  width: 50%;
+}
+#node4 img{
+    display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  width: 50%;
+}
+.description {
+    display: none;
+    font-size: 15px;
+    text-align: center;
+    position: absolute;
+    bottom: 0px;
+    width: 90%;
+    left: 15px;
+    top: 100px;
+    color: #ffffff;
+}
+.node:hover img {
+    opacity: 0;
+}
+
+.node:hover .description {
+    display: block;
+}

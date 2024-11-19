@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <nav class="navbar">
         <div class="heading">Faisal's Portfolio</div>
@@ -13,12 +15,12 @@
             <ul>
                 <li id="home">Home</li>
                 <li id="about">About</li>
-                <li id="conatct">Projects</li>
+                <li id="project">Projects</li>
             </ul>
         </div>
-        <label  class="toggle_box">
-                <input type="checkbox" id="checkbox">
-                <div class="circle"></div>
+        <label class="toggle_box">
+            <input type="checkbox" id="checkbox">
+            <div class="circle"></div>
         </label>
     </nav>
 
@@ -28,8 +30,8 @@
             <span id="element"></span>
         </div>
         <span id="img">
-        <img src="download1.jpeg" alt="">
-    </span>
+            <img src="download1.jpeg" alt="">
+        </span>
     </div>
 
     <div class="separation"></div>
@@ -38,16 +40,31 @@
         <h2>WORK EXPERIENCE</h2>
         <div class="wheel-container">
             <div class="wheel">
-                <div class="wheel">
-                    <div class="node" id="node1"></div>
-                    <div class="node" id="node2"></div>
-                    <div class="node" id="node3"></div>
-                    <div class="node" id="node4"></div>
+                <div class="node" id="node1">
+                    <img src="code-solid.svg" alt="">
+                    <p class="description">In 2024, I gained expertise in the MERN stack (MongoDB, Express.js, React.js, Node.js), successfully building and deploying multiple full-stack web applications that showcased dynamic functionality and seamless user experiences.</p>
+                </div>
+                <div class="node" id="node2">
+                    <img src="java-brands-solid.svg" alt="">
+                    <p class="description">I developed robust applications in Java, focusing on object-oriented programming, data structures, and building scalable backend systems.</p>
+                </div>
+                <div class="node" id="node3">
+                    <img src="js-brands-solid.svg" alt="">
+                    <p class="description">In 2024, I honed my JavaScript skills, creating dynamic, interactive web applications and mastering modern frameworks to deliver exceptional user experiences.</p>
+                </div>
+                <div class="node" id="node4">
+                    <img src="python-brands-solid.svg" alt="">
+                    <p class="description">Leveraging Python's versatility, I worked on data-driven projects, automating tasks, and creating efficient scripts and applications.</p>
                 </div>
             </div>
         </div>
     </div>
 
+    <div class="separation1"></div>
+
+    <footer>
+        <div class="contact"></div>
+    </footer>
 
     <script src="script.js"></script>
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
@@ -55,7 +72,8 @@
         var typed = new Typed('#element', {
             strings: ['Web Developer', 'Web Designer'],
             typeSpeed: 50,
-          });
+        });
     </script>
 </body>
+
 </html>
