@@ -15,6 +15,33 @@ body{
     height: 5vh;
     z-index: 10;
 }
+.bt{
+    border: none;
+    position: relative;
+    left: 350px;
+    top: 90px;
+}
+.bt button{
+    padding: 15px;
+    font-size: 18px;
+    font-weight: 700;
+    border-radius: 1rem;
+    background-color: blueviolet;
+    cursor: pointer;
+    width: 170px;
+    
+}
+.bt button a{
+    text-decoration: none;
+    color: #ffffff;
+}
+.bt button:hover{
+    box-shadow: 5px 5px 5px rgba(202, 196, 196, 0.4);
+    font-size: 20px;
+}
+.bt a:hover{
+    color: black;
+}
 .heading{
     font-size: 22px;
     font-weight: 900;
@@ -55,7 +82,7 @@ body{
 }
 #img img {
     position: relative; 
-    left: 1000px;
+    left: 930px;
     top: 200px;
     height: 350px;
     width: 500px;
@@ -108,6 +135,8 @@ h2{
     position: relative;
     top: 250px;
     left: 750px;
+    width: 250px;
+    align-items: center;
 }
 
 
@@ -252,4 +281,41 @@ h2{
 
 .node:hover .description {
     display: block;
+}
+.contact{
+    display: flex;
+    justify-content: flex-start;
+    color: #ffffff;
+}
+.contact h2{
+    position: relative;
+    left: 120px;
+    font-size: 30px;
+    top: 950px;
+}
+.info ul{
+    list-style: none;
+}
+.info ul li{
+    position: relative;
+    font-size: 20px;
+    left: 5px;
+    top: 1000px;
+    bottom: 500px;
+    padding: 10px;
+}
+.info a{
+    text-decoration: none;
+    color: whitesmoke;
+}
+a:hover{
+    color: blue;
+}
+.info ul li svg{
+    width: 20px;
+    height: 20px;
+    position: relative;
+    top: 5px;
+    left: 0px;
+    fill: #ffffff;
 }
